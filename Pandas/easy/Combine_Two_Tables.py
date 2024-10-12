@@ -1,6 +1,6 @@
 import pandas as pd
 
-''' task №175 '''
+# task №175 
 
 def combine_two_tables(person: pd.DataFrame, address: pd.DataFrame) -> pd.DataFrame:
     df = pd.merge(left=person, right=address, how='left',on='personId')[['firstName','lastName','city','state']]
